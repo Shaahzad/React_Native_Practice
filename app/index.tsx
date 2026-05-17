@@ -1,6 +1,6 @@
 import { Link } from 'expo-router'
 import React from 'react'
-import { Text, View } from 'react-native'
+import { StatusBar, Text, View } from 'react-native'
 import { SafeAreaView } from 'react-native-safe-area-context'
 
 const Index = () => {
@@ -10,7 +10,11 @@ const Index = () => {
         <Link href="/SplashScreen">
           <Text>Go to Splash Screen</Text>
         </Link>
+        <Link href="/OnBoardingScreen">
+          <Text>Go to On Boarding Screen</Text>
+        </Link>
       </View>
+      <StatusBar barStyle={"light-content"} />
     </SafeAreaView>
   )
 }
